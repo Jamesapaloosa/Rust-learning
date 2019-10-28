@@ -10,19 +10,19 @@ fn main(){
     println!("Ending tests.");
 }
 
-// fn forLoopMethod(loops_to_do: f32)-> u64{
-//     let start_time = SystemTime::now().duration_since(UNIX_EPOCH).expect("Time went backwards").as_secs();
-//     let mut i = 1.0;
-//     let mut _sqrt;
-//     for i in 1.0..loops_to_do
-//     {
-//         let sqrt = i.sqrt();
-//     }
-//     let finish_time = SystemTime::now().duration_since(UNIX_EPOCH).expect("Time went backwards").as_secs();
-//     let _dif = finish_time - start_time;
-//     println!("for loop speed {}", _dif);
-//     return _dif;
-// }
+fn forLoopMethod(loops_to_do: f32)-> u64{
+    let start_time = SystemTime::now().duration_since(UNIX_EPOCH).expect("Time went backwards").as_secs();
+    let mut i = 1.0;
+    let mut _sqrt;
+    for i in 1.0..loops_to_do
+    {
+        let sqrt = i.sqrt();
+    }
+    let finish_time = SystemTime::now().duration_since(UNIX_EPOCH).expect("Time went backwards").as_secs();
+    let _dif = finish_time - start_time;
+    println!("for loop speed {}", _dif);
+    return _dif;
+}
 
 fn while_loop_method(loops_to_do: f32)-> u64{
     println!("Running while loop.");
